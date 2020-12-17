@@ -13,4 +13,4 @@ spec:
       - backend:
           serviceName: devops-toolkit
           servicePort: 80
-    host: devopstoolkitseries.com
+    host: devops-toolkit.vfarcic.cloud.okteto.net
