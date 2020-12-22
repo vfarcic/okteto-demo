@@ -14,6 +14,7 @@ metadata:
     chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"
   annotations:
     kubernetes.io/ingress.class: "nginx"
+    dev.okteto.com/generate-host: "true"
 spec:
   rules:
   - http:

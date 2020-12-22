@@ -1,5 +1,5 @@
 deploy:
   - okteto build --tag okteto.dev/devops-toolkit:${OKTETO_GIT_COMMIT} .
-  - helm upgrade --install devops-toolkit helm --set image.repository=okteto.dev/devops-toolkit --set image.tag=${OKTETO_GIT_COMMIT} --set ingress.host=devops-toolkit.${OKTETO_NAMESPACE}.cloud.okteto.net
+  - helm upgrade --install devops-toolkit helm --set image.repository=okteto.dev/devops-toolkit --set image.tag=${OKTETO_GIT_COMMIT} --set ingress.enabled=false
 devs:
   - okteto.yml
