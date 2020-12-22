@@ -19,9 +19,3 @@
 .project
 .idea/
 *.tmproj
-*.png
-
-# known compile time folders
-target/
-node_modules/
-vendor/

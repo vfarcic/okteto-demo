@@ -1,9 +1,11 @@
+---
+
 apiVersion: v1
 kind: Service
 metadata:
-  name: devops-toolkit
+  name: {{ .Release.Name }}
   labels:
-    app: devops-toolkit
+    app: {{ .Release.Name }}
 spec:
   type: ClusterIP
   ports:
@@ -12,4 +14,4 @@ spec:
     protocol: TCP
     name: http
   selector:
-    app: devops-toolkit
+    app: {{ .Release.Name }}
