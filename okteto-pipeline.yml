@@ -1,5 +1,5 @@
 deploy:
-  - okteto build --tag vfarcic/devops-toolkit:${OKTETO_GIT_COMMIT} .
+  - okteto build --tag okteto.dev/devops-toolkit:${OKTETO_GIT_COMMIT} .
   - kubectl apply --filename k8s/
 devs:
   - okteto.yml
