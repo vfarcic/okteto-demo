@@ -1,2 +1,3 @@
 /creds
 /.gitignore
+/kubeconfig.yaml
